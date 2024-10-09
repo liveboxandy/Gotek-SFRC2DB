@@ -6,10 +6,11 @@
 	(paper "A4")
 	(title_block
 		(title "Gotek SFR1M44-DU26 (SFRC2D.B) Handrawn Schematic")
-		(date "2024-10-06")
+		(date "2024-10-09")
 		(rev "1.0")
 		(company "LiveBoxAndy")
 		(comment 1 "Based on pictures and meter readings.")
+		(comment 2 "Correct positions of C7 and C16 on schematic. Layout was correct")
 	)
 	(lib_symbols
 		(symbol "74xx:74AHC04"
@@ -8342,6 +8343,12 @@
 		(uuid "6295ed5b-fbbd-485a-9717-27f0666eb84c")
 	)
 	(junction
+		(at 231.394 92.456)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6dfa9403-385b-45b3-9cc1-4bcdfa7843dc")
+	)
+	(junction
 		(at 280.416 33.274)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8562,6 +8569,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ee582586-a18c-4f4a-afee-61f2b137b74f")
+	)
+	(junction
+		(at 231.394 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f91d2e51-337c-405c-829d-e04f61ca4d69")
 	)
 	(junction
 		(at 278.384 121.92)
@@ -8788,6 +8801,16 @@
 			(type default)
 		)
 		(uuid "09017c76-131b-40e0-8530-305b307c20cd")
+	)
+	(wire
+		(pts
+			(xy 223.52 92.456) (xy 231.394 92.456)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09653446-9be8-477b-95ab-55acecd50fd5")
 	)
 	(wire
 		(pts
@@ -9281,6 +9304,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.394 92.456) (xy 234.188 92.456)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "420e9caa-96ad-453a-ae0d-fe445501ea53")
+	)
+	(wire
+		(pts
 			(xy 182.88 161.798) (xy 195.58 161.798)
 		)
 		(stroke
@@ -9388,6 +9421,16 @@
 			(type default)
 		)
 		(uuid "4bd98f19-c0ad-4a9f-8eb4-d68a52784a37")
+	)
+	(wire
+		(pts
+			(xy 234.442 83.82) (xy 231.394 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bdfcc4a-814a-4489-9cf3-25d526104377")
 	)
 	(wire
 		(pts
@@ -9921,6 +9964,16 @@
 	)
 	(wire
 		(pts
+			(xy 223.52 83.82) (xy 231.394 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87a4c381-0689-4fcf-a417-a33f5c0fe2f9")
+	)
+	(wire
+		(pts
 			(xy 27.94 101.346) (xy 25.146 101.346)
 		)
 		(stroke
@@ -10241,6 +10294,16 @@
 	)
 	(wire
 		(pts
+			(xy 223.52 83.82) (xy 223.52 89.916)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa35af6a-920e-4fd0-af9b-3e78b16d5751")
+	)
+	(wire
+		(pts
 			(xy 60.706 41.148) (xy 106.426 41.148)
 		)
 		(stroke
@@ -10418,6 +10481,16 @@
 			(type default)
 		)
 		(uuid "b8c9334c-186f-4ff9-bf05-b558b9d7fb2e")
+	)
+	(wire
+		(pts
+			(xy 231.394 91.44) (xy 231.394 92.456)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba68d458-5765-4a4a-84e2-640ebe0329db")
 	)
 	(wire
 		(pts
@@ -11009,9 +11082,9 @@
 		)
 		(uuid "ffba1ce3-e8a9-43f6-a6b7-01a0d15b3d70")
 	)
-	(text "C16 is placed close\nto these pins"
+	(text "C16 is placed close\nto pins 47 & 48"
 		(exclude_from_sim no)
-		(at 231.14 87.122 0)
+		(at 226.822 153.67 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12884,7 +12957,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 223.52 89.916 270)
+		(at 234.442 83.82 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12893,7 +12966,7 @@
 		(fields_autoplaced yes)
 		(uuid "06a9c4ca-34e6-4ec0-bcd0-979496b12683")
 		(property "Reference" "#PWR033"
-			(at 219.71 89.916 0)
+			(at 230.632 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12902,7 +12975,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 227.33 89.9159 90)
+			(at 238.252 83.8199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12911,7 +12984,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 223.52 89.916 0)
+			(at 234.442 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12920,7 +12993,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 223.52 89.916 0)
+			(at 234.442 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12929,7 +13002,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 223.52 89.916 0)
+			(at 234.442 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16159,7 +16232,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 215.9 160.528 0)
+		(at 231.394 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16168,7 +16241,7 @@
 		(fields_autoplaced yes)
 		(uuid "6aa3b136-c1c5-4d17-942a-ff204181db41")
 		(property "Reference" "C7"
-			(at 218.948 159.2579 0)
+			(at 234.442 86.3599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16177,7 +16250,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 218.948 161.7979 0)
+			(at 234.442 88.8999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16186,7 +16259,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 216.8652 164.338 0)
+			(at 232.3592 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16195,7 +16268,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 215.9 160.528 0)
+			(at 231.394 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16204,7 +16277,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 215.9 160.528 0)
+			(at 231.394 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16836,7 +16909,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 223.52 92.456 90)
+		(at 234.188 92.456 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16845,7 +16918,7 @@
 		(fields_autoplaced yes)
 		(uuid "7d8acfa1-c729-4518-9758-99795027afc8")
 		(property "Reference" "#PWR032"
-			(at 229.87 92.456 0)
+			(at 240.538 92.456 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16854,7 +16927,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 227.33 92.4559 90)
+			(at 237.998 92.4559 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16863,7 +16936,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 223.52 92.456 0)
+			(at 234.188 92.456 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16872,7 +16945,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 223.52 92.456 0)
+			(at 234.188 92.456 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16881,7 +16954,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 223.52 92.456 0)
+			(at 234.188 92.456 0)
 			(effects
 				(font
 					(size 1.27 1.27)
