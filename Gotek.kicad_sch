@@ -6,11 +6,12 @@
 	(paper "A4")
 	(title_block
 		(title "Gotek SFR1M44-DU26 (SFRC2D.B) Handrawn Schematic")
-		(date "2024-10-09")
+		(date "2024-10-10")
 		(rev "1.0")
 		(company "LiveBoxAndy")
 		(comment 1 "Based on pictures and meter readings.")
 		(comment 2 "Correct positions of C7 and C16 on schematic. Layout was correct")
+		(comment 3 "Correct values of R10 and RN13")
 	)
 	(lib_symbols
 		(symbol "74xx:74AHC04"
@@ -8403,12 +8404,6 @@
 		(uuid "999f0d6d-1228-461e-a23a-4419d14270bc")
 	)
 	(junction
-		(at 215.9 155.702)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a1ca150e-696d-4b34-ad9e-d639bc235dff")
-	)
-	(junction
 		(at 152.654 94.996)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8443,12 +8438,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ac952a93-1453-4ab1-9088-4cbad0ba901f")
-	)
-	(junction
-		(at 215.9 164.592)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "acad0445-e6cc-45fc-a04b-b292ceee02a7")
 	)
 	(junction
 		(at 227.838 136.144)
@@ -9694,16 +9683,6 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 164.592) (xy 213.36 164.592)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "69d5ef71-a5cb-47c4-97a8-909072d79078")
-	)
-	(wire
-		(pts
 			(xy 273.304 155.702) (xy 215.9 155.702)
 		)
 		(stroke
@@ -9881,16 +9860,6 @@
 			(type default)
 		)
 		(uuid "7f7074a8-d501-44e8-9426-cf144f7208fc")
-	)
-	(wire
-		(pts
-			(xy 215.9 164.338) (xy 215.9 164.592)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f98480c-7d86-4668-85d4-dde2f95fb3fd")
 	)
 	(wire
 		(pts
@@ -10844,7 +10813,7 @@
 	)
 	(wire
 		(pts
-			(xy 239.014 164.592) (xy 215.9 164.592)
+			(xy 213.36 164.592) (xy 239.014 164.592)
 		)
 		(stroke
 			(width 0)
@@ -11061,16 +11030,6 @@
 			(type default)
 		)
 		(uuid "fe0fbfa0-4d89-40b9-91c6-bc3f9d2930a9")
-	)
-	(wire
-		(pts
-			(xy 215.9 155.702) (xy 215.9 156.718)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff0250db-98dd-438f-9afb-ff3b48c2a003")
 	)
 	(wire
 		(pts
@@ -14359,7 +14318,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "4K7"
 			(at 124.206 175.2601 0)
 			(effects
 				(font
@@ -19210,7 +19169,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "4K7"
 			(at 136.906 125.2219 0)
 			(effects
 				(font
